@@ -1,0 +1,3 @@
+ssh ec2-user@public_ip -i terraform.pem
+
+ssh ec2-user@52.206.215.127 -i terraform.pem
