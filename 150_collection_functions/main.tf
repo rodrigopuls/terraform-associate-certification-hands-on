@@ -27,7 +27,7 @@ output "chunklist" {
   value = chunklist(["a", "b", "c", "d", "e", "f", "g"], 2)
 }
 
-# coalesce - returns first not null or empty
+# coalesce - takes any number of arguments and returns the first one that isn't null or an empty string.
 output "coalesce" {
   value = coalesce("a", "b") # a
 }
@@ -189,7 +189,7 @@ output "transpose" {
   value = transpose({ "a" = ["1", "2"], "b" = ["2", "3"] })
 }
 
-# zipmap - construct map from to lists
+# zipmap - construct map from two lists
 output "zipmap" {
   value = zipmap(["a", "b"], [1, 2])
 }
